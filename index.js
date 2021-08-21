@@ -1,5 +1,7 @@
+require("dotenv").config()
 const express = require("express");
 const path = require("path");
+
 
 const mongoose = require("mongoose");
 const contact = require("./models/message");
@@ -58,4 +60,4 @@ app.get("/success", async(req,res)=>{
     res.render("success")
 })
 
-app.listen(8000, ()=> console.log("Resume"))     
+app.listen(process.env.PORT || 8000  , ()=> console.log("Resume"))     
