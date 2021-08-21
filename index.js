@@ -8,9 +8,9 @@ const contact = require("./models/message");
 
 const Message = mongoose.model("Contact");
 
-mongoose.connect("mongodb://localhost/HNG",{useUnifiedTopology: true, useNewUrlParser:true , useCreateIndex: true , useFindAndModify:false});
+// mongoose.connect("mongodb://localhost/HNG",{useUnifiedTopology: true, useNewUrlParser:true , useCreateIndex: true , useFindAndModify:false});
 
-// mongoose.connect("mongodb+srv://Hud:ismail@hng.nymdr.mongodb.net/HNG001?retryWrites=true&w=majority",{useUnifiedTopology: true, useNewUrlParser:true , useCreateIndex: true , useFindAndModify:false});
+mongoose.connect("mongodb+srv://Hud:ismail@hng.nymdr.mongodb.net/HNG001?retryWrites=true&w=majority",{useUnifiedTopology: true, useNewUrlParser:true , useCreateIndex: true , useFindAndModify:false});
  
 mongoose.connection.on("error", console.error.bind(console, "connection error"));
 mongoose.connection.once("open", ()=>console.log("Database connected!!!"));
