@@ -21,7 +21,7 @@ const app = express();
 
 // app.engine("ejs", ejsMate)
 
-app.use('/public', express.static('public'));
+// app.use('/public', express.static('public'));
 
 
 app.set("view engine", "ejs");
