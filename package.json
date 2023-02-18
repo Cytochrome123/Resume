@@ -8,7 +8,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "author": "Hudhayfah",
+  "author": "Hudhayfah.",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
